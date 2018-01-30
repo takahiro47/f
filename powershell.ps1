@@ -1,5 +1,28 @@
 # https://powershell.org/forums/topic/export-ldapgc-query-to-csv/
 
+## Separate CSV
+## --------------------------------------------- ###
+
+$users = Import-Csv ./ldap.csv
+foreach ($user in $users ) {
+  $roles = @()
+  if ($user.Role -match '^(\{)?CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(,\ CN=(((?!\,).)*),CN=groups,CN=(((?!\,).)*),O=ecm)?(\})?$') {
+    $matches
+    if ($matches[2]) { $roles += $matches[2] }
+    if ($matches[7]) { $roles += $matches[7] }
+    if ($matches[12]) { $roles += $matches[12] }
+    if ($matches[17]) { $roles += $matches[17] }
+    if ($matches[22]) { $roles += $matches[22] }
+    if ($matches[27]) { $roles += $matches[27] }
+    if ($matches[32]) { $roles += $matches[32] }
+    if ($matches[37]) { $roles += $matches[37] }
+    if ($matches[42]) { $roles += $matches[42] }
+    if ($matches[47]) { $roles += $matches[47] }
+  }
+  $roles -Join ", "
+  "---"
+}
+
 ## Logger
 ## --------------------------------------------- ###
 
