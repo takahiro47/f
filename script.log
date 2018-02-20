@@ -1,8 +1,8 @@
 
 INFO  2018-02-20 10:38:02(JST) ==============================================================
-INFO  2018-02-20 10:38:02(JST) = createUserlist: stable 1.0.0 (IBM Datacap)                 =
-INFO  2018-02-20 10:38:02(JST) =   Export GCI accounts list from ADLDS                      =
-INFO  2018-02-20 10:38:02(JST) =   Daily cleanup temporary scan files by WebTWAIN           =
+INFO  2018-02-20 10:38:02(JST) = createUserlist: stable 1.0.0 (IBM Datacap)
+INFO  2018-02-20 10:38:02(JST) =   Export GCI accounts list from ADLDS
+INFO  2018-02-20 10:38:02(JST) =   Daily cleanup temporary scan files by WebTWAIN
 INFO  2018-02-20 10:38:02(JST) ==============================================================
 INFO  2018-02-20 10:38:02(JST) [app] The client started and connecting to ldap://localhost:389...
 INFO  2018-02-20 10:38:02(JST) [app] ..
@@ -23,8 +23,8 @@ INFO  2018-02-20 10:38:02(JST) [app:connect] Client connected to ldap server
 INFO  2018-02-20 10:38:02(JST) [app:connect] Finished!
 INFO  2018-02-20 10:38:02(JST) .
 INFO  2018-02-20 10:38:02(JST) [app:crawler] Crawler generating...
-INFO  2018-02-20 10:38:02(JST) [app:crawler] Crawler serched ldap
-INFO  2018-02-20 10:38:02(JST) [app:crawler] total 1000 records found
+INFO  2018-02-20 10:38:02(JST) [app:crawler] Crawler is searching entities...
+INFO  2018-02-20 10:38:02(JST) [app:crawler] Total: 1000 entities found
 INFO  2018-02-20 10:38:02(JST) [app:crawler] Finished!
 INFO  2018-02-20 10:38:02(JST) .
 INFO  2018-02-20 10:38:02(JST) [app:generic] arranging format...
