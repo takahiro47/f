@@ -75,4 +75,8 @@ Sub initVariables()
   ' 環境変数
   Set conf = CreateObject("Scripting.Dictionary")
   Set conf = configStore.getConfigurations()
+
+  ' 環境変数の取り出し
+  filepath = conf.Item("path_baee_development") + conf.Item("path_ipo_modules_production") + "listD.txt"
+
 End Sub
